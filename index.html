@@ -1,17 +1,124 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Grr by Grumpeh</title>
 
-    <meta http-equiv="refresh" content="2; url=https://github.com/google/grr" />
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>Grr</h1>
+        <p>GRR Rapid Response: remote live forensics for incident response</p>
+        <p class="view"><a href="https://github.com/Grumpeh/grr">View the Project on GitHub <small>Grumpeh/grr</small></a></p>
+        <ul>
+          <li><a href="https://github.com/Grumpeh/grr/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Grumpeh/grr/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Grumpeh/grr">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p></p><p align="center">
+<img src="https://raw.githubusercontent.com/google/grr/gh-pages/img/grr_logo_real_sm.png"></p>
 
-    We're still working on this site.  Redirecting you to <a
-                               href="https://github.com/google/grr">https://github.com/google/grr</a>
-    for now.
+<p></p><p align="center">
+GRR Rapid Response is an incident response framework focused on remote live forensics.</p>
 
+<h2>
+<a id="links--" class="anchor" href="#links--" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links  <a href="https://travis-ci.org/google/grr"><img src="https://travis-ci.org/google/grr.svg?branch=master" alt="Build Status"></a>
+</h2>
+
+<ul>
+<li><a href="https://github.com/google/grr-doc/blob/master/quickstart.adoc">Quickstart: Fast automated installation</a></li>
+<li><a href="https://googledrive.com/host/0B1wsLqFoT7i2N3hveC1lSEpHUnM/">Downloads (installation files, client templates)</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/user_manual.adoc">User Manual</a></li>
+<li><a href="http://grr-response.blogspot.com/">Blog</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/admin.adoc">Administration Documentation (Setup and Configuration)</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/publications.adoc">Publications: Papers, Presentations, Workshops etc.</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/faq.adoc">Project FAQ</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/implementation.adoc">Developer and Implementation Documentation</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/configuration.adoc">The GRR Configuration system</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/releasenotes.adoc">Release Notes: check these when upgrading</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/roadmap.adoc">Project Roadmap</a></li>
+<li><a href="https://github.com/google/grr-doc">Search Documentation (using github search)</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/licenses.adoc">License Information</a></li>
+<li><a href="https://github.com/google/grr-doc/blob/master/troubleshooting.adoc">Troubleshooting</a></li>
+</ul>
+
+<h2>
+<a id="mailing-lists" class="anchor" href="#mailing-lists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mailing Lists</h2>
+
+<ul>
+<li>GRR Users: <a href="https://groups.google.com/forum/#!forum/grr-users">grr-users</a>
+</li>
+<li>GRR Developers: <a href="https://groups.google.com/forum/#!forum/grr-dev">grr-dev</a>
+</li>
+</ul>
+
+<h2>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>GRR consists of an agent (client) that can be deployed to a target system, and
+server infrastructure that can manage and talk to the agent.<br></p>
+
+<p>Client Features:</p>
+
+<ul>
+<li>Cross-platform support for Linux, Mac OS X and Windows clients.</li>
+<li>Live remote memory analysis using open source memory drivers for Linux, Mac
+OS X and Windows, and the <a href="http://www.rekall-forensic.com/">Rekall</a> memory
+analysis framework.</li>
+<li>Powerful search and download capabilities for files and the Windows registry.</li>
+<li>Secure communication infrastructure designed for Internet deployment.</li>
+<li>Client automatic update support.</li>
+<li>Detailed monitoring of client CPU, memory, IO usage and self-imposed
+limits.</li>
+</ul>
+
+<p>Server Features:</p>
+
+<ul>
+<li>Fully fledged response capabilities handling most incident response and
+forensics tasks.</li>
+<li>OS-level and raw file system access, using the SleuthKit (TSK).</li>
+<li>Enterprise hunting (searching across a fleet of machines) support.</li>
+<li>Fully scalable back-end to handle very large deployments.</li>
+<li>Automated scheduling for recurring tasks.</li>
+<li>Fast and simple collection of hundreds of digital forensic artifacts.</li>
+<li>Asynchronous design allows future task scheduling for clients, designed to
+work with a large fleet of laptops.</li>
+<li>Ajax Web UI.</li>
+<li>Fully scriptable IPython console access.</li>
+<li>Basic system timelining features.</li>
+<li>Basic reporting infrastructure.</li>
+</ul>
+
+<p>See <a href="https://github.com/google/grr-doc/blob/master/quickstart.adoc">quickstart</a> to start using it.</p>
+
+<h2>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<p><a href="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:36:13.png"><img src="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:36:13.png" width="140" height="80"></a>
+<a href="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:36:46.png"><img src="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:36:46.png" width="140" height="80"></a>
+<a href="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:37:37.png"><img src="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:37:37.png" width="140" height="80"></a>
+<a href="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:40:49.png"><img src="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:40:49.png" width="140" height="80"></a>
+<a href="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:41:45.png"><img src="http://wiki.grr.googlecode.com/git/Screenshot%20from%202013-11-18%2018:41:45.png" width="140" height="80"></a></p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/Grumpeh">Grumpeh</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
-
